@@ -8,488 +8,523 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="products-content grid-container">
-            <div class="filters">
-                <div class="filters__item filters-price">
-                    <h3 class="filters-price__title">Цена</h3>
-                    <div class="filters-price__slider"></div>
-                    <div class="filters-price__inputs">
-                        <input class="filters-price__input"></inputs>
-                        <input class="filters-price__input"></inputs>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="" class="nav__link">Каталог</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Акции</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Оплата и доставка</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Работа в компании</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+                </ul>
+                <div class="header__cart cart" tabindex="0">
+                    <div class="cart__text">
+                        Корзина
+                        <span class="cart__quantity">0</span>
+                    </div>
+                    <div class="cart-content">
+                        <ul class="cart-content__list">
+                
+                        </ul>
+                        <div class="cart-content__bottom">
+                            <div class="cart-content__fullPrice">
+                                <span>Итого:</span>
+                                <span class="fullPrice">0</span>
+                            </div>
+                            <button class="cart-content__btn btn">Оформить заказ</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <ul class="products-grid">
-                <li class="products-grid__item">
-                    <article class="product">
-       
-                        <div class="product__image"> 
-                            <div class="product__switch image-switch" >
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard1.png" alt="T-Shirt 1"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
-                                </div>
-                              
-                            </div>
-                      
-                
-                            <ul class="product__image-pagination image-pagination" aria-hidden="true">
-                                
-                            </ul>
-                        </div>
-                        <h3 class="product__title">
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
-                        </h3>
-                        <div class="product__props">
-                            <span class="product__rating">
-                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
-                                    <defs>
-                                      <clipPath id="clip-heart">
-                                        <rect width="96" height="96"/>
-                                      </clipPath>
-                                    </defs>
-                                    <g id="heart" clip-path="url(#clip-heart)">
-                                      <g id="pills" transform="translate(-116 -232)">
-                                        <g id="Group_150" data-name="Group 150">
-                                          <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </svg>
-                            </span>
-                            4.5
-                            <span class="product__testimonials">83 отзыва</span>
-                        </div>
-                        <div class="product__info">
-                            <span class="product__term">Артикул 000001</span>
-                            <span class="product__available">В наличии 13 шт</span>
-                        </div>
-                        <div class="product__price product-price">
-                            <span class="product-price__current">500 $</span>
-                            <span class="product-price__old">1000 $</span>
-                            
-                        </div>
-                        <button class="product__btn">В корзину</button>
-                        
-                    </article>
-                </li>
-                <li class="products-grid__item">
-                    <article class="product">
-       
-                        <div class="product__image"> 
-                            <div class="product__switch image-switch" >
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard1.png" alt="T-Shirt 1"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
-                                </div>
-                              
-                            </div>
-                      
-                
-                            <ul class="product__image-pagination image-pagination" aria-hidden="true">
-                                
-                            </ul>
-                        </div>
-                        <h3 class="product__title">
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
-                        </h3>
-                        <div class="product__props">
-                            <span class="product__rating">
-                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
-                                    <defs>
-                                      <clipPath id="clip-heart">
-                                        <rect width="96" height="96"/>
-                                      </clipPath>
-                                    </defs>
-                                    <g id="heart" clip-path="url(#clip-heart)">
-                                      <g id="pills" transform="translate(-116 -232)">
-                                        <g id="Group_150" data-name="Group 150">
-                                          <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </svg>
-                            </span>
-                            4.5
-                            <span class="product__testimonials">83 отзыва</span>
-                        </div>
-                        <div class="product__info">
-                            <span class="product__term">Артикул 000001</span>
-                            <span class="product__available">В наличии 13 шт</span>
-                        </div>
-                        <div class="product__price product-price">
-                            <span class="product-price__current">500 $</span>
-                            <span class="product-price__old">1000 $</span>
-                            
-                        </div>
-                        <button class="product__btn">В корзину</button>
-                        
-                    </article>
-                </li>
-                <li class="products-grid__item">
-                    <article class="product">
-       
-                        <div class="product__image"> 
-                            <div class="product__switch image-switch" >
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard1.png" alt="T-Shirt 1"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
-                                </div>
-                              
-                            </div>
-                      
-                
-                            <ul class="product__image-pagination image-pagination" aria-hidden="true">
-                                
-                            </ul>
-                        </div>
-                        <h3 class="product__title">
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
-                        </h3>
-                        <div class="product__props">
-                            <span class="product__rating">
-                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
-                                    <defs>
-                                      <clipPath id="clip-heart">
-                                        <rect width="96" height="96"/>
-                                      </clipPath>
-                                    </defs>
-                                    <g id="heart" clip-path="url(#clip-heart)">
-                                      <g id="pills" transform="translate(-116 -232)">
-                                        <g id="Group_150" data-name="Group 150">
-                                          <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </svg>
-                            </span>
-                            4.5
-                            <span class="product__testimonials">83 отзыва</span>
-                        </div>
-                        <div class="product__info">
-                            <span class="product__term">Артикул 000001</span>
-                            <span class="product__available">В наличии 13 шт</span>
-                        </div>
-                        <div class="product__price product-price">
-                            <span class="product-price__current">500 $</span>
-                            <span class="product-price__old">1000 $</span>
-                            
-                        </div>
-                        <button class="product__btn">В корзину</button>
-                        
-                    </article>
-                </li>
-                <li class="products-grid__item">
-                    <article class="product">
-       
-                        <div class="product__image"> 
-                            <div class="product__switch image-switch" >
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard1.png" alt="T-Shirt 1"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
-                                </div>
-                              
-                            </div>
-                      
-                
-                            <ul class="product__image-pagination image-pagination" aria-hidden="true">
-                                
-                            </ul>
-                        </div>
-                        <h3 class="product__title">
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
-                        </h3>
-                        <div class="product__props">
-                            <span class="product__rating">
-                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
-                                    <defs>
-                                      <clipPath id="clip-heart">
-                                        <rect width="96" height="96"/>
-                                      </clipPath>
-                                    </defs>
-                                    <g id="heart" clip-path="url(#clip-heart)">
-                                      <g id="pills" transform="translate(-116 -232)">
-                                        <g id="Group_150" data-name="Group 150">
-                                          <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </svg>
-                            </span>
-                            4.5
-                            <span class="product__testimonials">83 отзыва</span>
-                        </div>
-                        <div class="product__info">
-                            <span class="product__term">Артикул 000001</span>
-                            <span class="product__available">В наличии 13 шт</span>
-                        </div>
-                        <div class="product__price product-price">
-                            <span class="product-price__current">500 $</span>
-                            <span class="product-price__old">1000 $</span>
-                            
-                        </div>
-                        <button class="product__btn">В корзину</button>
-                        
-                    </article>
-                </li>
-                <li class="products-grid__item">
-                    <article class="product">
-       
-                        <div class="product__image"> 
-                            <div class="product__switch image-switch" >
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard1.png" alt="T-Shirt 1"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
-                                </div>
-                              
-                            </div>
-                      
-                
-                            <ul class="product__image-pagination image-pagination" aria-hidden="true">
-                                
-                            </ul>
-                        </div>
-                        <h3 class="product__title">
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
-                        </h3>
-                        <div class="product__props">
-                            <span class="product__rating">
-                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
-                                    <defs>
-                                      <clipPath id="clip-heart">
-                                        <rect width="96" height="96"/>
-                                      </clipPath>
-                                    </defs>
-                                    <g id="heart" clip-path="url(#clip-heart)">
-                                      <g id="pills" transform="translate(-116 -232)">
-                                        <g id="Group_150" data-name="Group 150">
-                                          <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </svg>
-                            </span>
-                            4.5
-                            <span class="product__testimonials">83 отзыва</span>
-                        </div>
-                        <div class="product__info">
-                            <span class="product__term">Артикул 000001</span>
-                            <span class="product__available">В наличии 13 шт</span>
-                        </div>
-                        <div class="product__price product-price">
-                            <span class="product-price__current">500 $</span>
-                            <span class="product-price__old">1000 $</span>
-                            
-                        </div>
-                        <button class="product__btn">В корзину</button>
-                        
-                    </article>
-                </li>
-                <li class="products-grid__item">
-                    <article class="product">
-       
-                        <div class="product__image"> 
-                            <div class="product__switch image-switch" >
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard1.png" alt="T-Shirt 1"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
-                                </div>
-                              
-                            </div>
-                      
-                
-                            <ul class="product__image-pagination image-pagination" aria-hidden="true">
-                                
-                            </ul>
-                        </div>
-                        <h3 class="product__title">
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
-                        </h3>
-                        <div class="product__props">
-                            <span class="product__rating">
-                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
-                                    <defs>
-                                      <clipPath id="clip-heart">
-                                        <rect width="96" height="96"/>
-                                      </clipPath>
-                                    </defs>
-                                    <g id="heart" clip-path="url(#clip-heart)">
-                                      <g id="pills" transform="translate(-116 -232)">
-                                        <g id="Group_150" data-name="Group 150">
-                                          <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </svg>
-                            </span>
-                            4.5
-                            <span class="product__testimonials">83 отзыва</span>
-                        </div>
-                        <div class="product__info">
-                            <span class="product__term">Артикул 000001</span>
-                            <span class="product__available">В наличии 13 шт</span>
-                        </div>
-                        <div class="product__price product-price">
-                            <span class="product-price__current">500 $</span>
-                            <span class="product-price__old">1000 $</span>
-                            
-                        </div>
-                        <button class="product__btn">В корзину</button>
-                        
-                    </article>
-                </li>
-                <li class="products-grid__item">
-                    <article class="product">
-       
-                        <div class="product__image"> 
-                            <div class="product__switch image-switch" >
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard1.png" alt="T-Shirt 1"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
-                                </div>
-                              
-                            </div>
-                      
-                
-                            <ul class="product__image-pagination image-pagination" aria-hidden="true">
-                                
-                            </ul>
-                        </div>
-                        <h3 class="product__title">
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
-                        </h3>
-                        <div class="product__props">
-                            <span class="product__rating">
-                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
-                                    <defs>
-                                      <clipPath id="clip-heart">
-                                        <rect width="96" height="96"/>
-                                      </clipPath>
-                                    </defs>
-                                    <g id="heart" clip-path="url(#clip-heart)">
-                                      <g id="pills" transform="translate(-116 -232)">
-                                        <g id="Group_150" data-name="Group 150">
-                                          <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </svg>
-                            </span>
-                            4.5
-                            <span class="product__testimonials">83 отзыва</span>
-                        </div>
-                        <div class="product__info">
-                            <span class="product__term">Артикул 000001</span>
-                            <span class="product__available">В наличии 13 шт</span>
-                        </div>
-                        <div class="product__price product-price">
-                            <span class="product-price__current">500 $</span>
-                            <span class="product-price__old">1000 $</span>
-                            
-                        </div>
-                        <button class="product__btn">В корзину</button>
-                        
-                    </article>
-                </li>
-                <li class="products-grid__item">
-                    <article class="product">
-       
-                        <div class="product__image"> 
-                            <div class="product__switch image-switch" >
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard1.png" alt="T-Shirt 1"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
-                                </div>
-                                <div class="image-switch__item">
-                                    <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
-                                </div>
-                              
-                            </div>
-                      
-                
-                            <ul class="product__image-pagination image-pagination" aria-hidden="true">
-                                
-                            </ul>
-                        </div>
-                        <h3 class="product__title">
-                            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
-                        </h3>
-                        <div class="product__props">
-                            <span class="product__rating">
-                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
-                                    <defs>
-                                      <clipPath id="clip-heart">
-                                        <rect width="96" height="96"/>
-                                      </clipPath>
-                                    </defs>
-                                    <g id="heart" clip-path="url(#clip-heart)">
-                                      <g id="pills" transform="translate(-116 -232)">
-                                        <g id="Group_150" data-name="Group 150">
-                                          <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </svg>
-                            </span>
-                            4.5
-                            <span class="product__testimonials">83 отзыва</span>
-                        </div>
-                        <div class="product__info">
-                            <span class="product__term">Артикул 000001</span>
-                            <span class="product__available">В наличии 13 шт</span>
-                        </div>
-                        <div class="product__price product-price">
-                            <span class="product-price__current">500 $</span>
-                            <span class="product-price__old">1000 $</span>
-                            
-                        </div>
-                        <button class="product__btn">В корзину</button>
-                        
-                    </article>
-                </li>
-            </ul>
+            </nav>
         </div>
-        <div class="height"></div>
-    </div>
+    </header>
+    <main class="content">
+        <div class="container">
+            <div class="products-content grid-container">
+                <div class="filters">
+                    <div class="filters__item filters-price">
+                        <h3 class="filters-price__title">Цена</h3>
+                        <div class="filters-price__slider"></div>
+                        <div class="filters-price__inputs">
+                            <input class="filters-price__input"></inputs>
+                            <input class="filters-price__input"></inputs>
+                        </div>
+                    </div>
+                </div>
+                <ul class="products-grid">
+                    <li class="products-grid__item">
+                        <article class="product">
+           
+                            <div class="product__image"> 
+                                <div class="product__switch image-switch" >
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard1.png" alt="T-Shirt 1"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
+                                    </div>
+                                  
+                                </div>
+                          
+                    
+                                <ul class="product__image-pagination image-pagination" aria-hidden="true">
+                                    
+                                </ul>
+                            </div>
+                            <h3 class="product__title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
+                                        <defs>
+                                          <clipPath id="clip-heart">
+                                            <rect width="96" height="96"/>
+                                          </clipPath>
+                                        </defs>
+                                        <g id="heart" clip-path="url(#clip-heart)">
+                                          <g id="pills" transform="translate(-116 -232)">
+                                            <g id="Group_150" data-name="Group 150">
+                                              <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                </span>
+                                4.5
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__term">Артикул 000001</span>
+                                <span class="product__available">В наличии 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">500 $</span>
+                                <span class="product-price__old">1000 $</span>
+                                
+                            </div>
+                            <button class="product__btn btn">В корзину</button>
+                            
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+           
+                            <div class="product__image"> 
+                                <div class="product__switch image-switch" >
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 1"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard1.png" alt="T-Shirt 3"></div>
+                                    </div>
+                                  
+                                </div>
+                          
+                    
+                                <ul class="product__image-pagination image-pagination" aria-hidden="true">
+                                    
+                                </ul>
+                            </div>
+                            <h3 class="product__title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
+                                        <defs>
+                                          <clipPath id="clip-heart">
+                                            <rect width="96" height="96"/>
+                                          </clipPath>
+                                        </defs>
+                                        <g id="heart" clip-path="url(#clip-heart)">
+                                          <g id="pills" transform="translate(-116 -232)">
+                                            <g id="Group_150" data-name="Group 150">
+                                              <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                </span>
+                                4.5
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__term">Артикул 000001</span>
+                                <span class="product__available">В наличии 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">500 $</span>
+                                <span class="product-price__old">1000 $</span>
+                                
+                            </div>
+                            <button class="product__btn btn btn">В корзину</button>
+                            
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+           
+                            <div class="product__image"> 
+                                <div class="product__switch image-switch" >
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 1"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard1.png" alt="T-Shirt 2"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
+                                    </div>
+                                  
+                                </div>
+                          
+                    
+                                <ul class="product__image-pagination image-pagination" aria-hidden="true">
+                                    
+                                </ul>
+                            </div>
+                            <h3 class="product__title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
+                                        <defs>
+                                          <clipPath id="clip-heart">
+                                            <rect width="96" height="96"/>
+                                          </clipPath>
+                                        </defs>
+                                        <g id="heart" clip-path="url(#clip-heart)">
+                                          <g id="pills" transform="translate(-116 -232)">
+                                            <g id="Group_150" data-name="Group 150">
+                                              <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                </span>
+                                4.5
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__term">Артикул 000001</span>
+                                <span class="product__available">В наличии 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">500 $</span>
+                                <span class="product-price__old">1000 $</span>
+                                
+                            </div>
+                            <button class="product__btn btn">В корзину</button>
+                            
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+           
+                            <div class="product__image"> 
+                                <div class="product__switch image-switch" >
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard9.jpg" alt="T-Shirt 1"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
+                                    </div>
+                                  
+                                </div>
+                          
+                    
+                                <ul class="product__image-pagination image-pagination" aria-hidden="true">
+                                    
+                                </ul>
+                            </div>
+                            <h3 class="product__title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
+                                        <defs>
+                                          <clipPath id="clip-heart">
+                                            <rect width="96" height="96"/>
+                                          </clipPath>
+                                        </defs>
+                                        <g id="heart" clip-path="url(#clip-heart)">
+                                          <g id="pills" transform="translate(-116 -232)">
+                                            <g id="Group_150" data-name="Group 150">
+                                              <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                </span>
+                                4.5
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__term">Артикул 000001</span>
+                                <span class="product__available">В наличии 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">500 $</span>
+                                <span class="product-price__old">1000 $</span>
+                                
+                            </div>
+                            <button class="product__btn btn">В корзину</button>
+                            
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+           
+                            <div class="product__image"> 
+                                <div class="product__switch image-switch" >
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard11.jpg" alt="T-Shirt 1"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
+                                    </div>
+                                  
+                                </div>
+                          
+                    
+                                <ul class="product__image-pagination image-pagination" aria-hidden="true">
+                                    
+                                </ul>
+                            </div>
+                            <h3 class="product__title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
+                                        <defs>
+                                          <clipPath id="clip-heart">
+                                            <rect width="96" height="96"/>
+                                          </clipPath>
+                                        </defs>
+                                        <g id="heart" clip-path="url(#clip-heart)">
+                                          <g id="pills" transform="translate(-116 -232)">
+                                            <g id="Group_150" data-name="Group 150">
+                                              <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                </span>
+                                4.5
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__term">Артикул 000001</span>
+                                <span class="product__available">В наличии 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">50 000 $</span>
+                                <span class="product-price__old">1000 $</span>
+                                
+                            </div>
+                            <button class="product__btn btn">В корзину</button>
+                            
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+           
+                            <div class="product__image"> 
+                                <div class="product__switch image-switch" >
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard8.jpg" alt="T-Shirt 1"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
+                                    </div>
+                                  
+                                </div>
+                          
+                    
+                                <ul class="product__image-pagination image-pagination" aria-hidden="true">
+                                    
+                                </ul>
+                            </div>
+                            <h3 class="product__title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
+                                        <defs>
+                                          <clipPath id="clip-heart">
+                                            <rect width="96" height="96"/>
+                                          </clipPath>
+                                        </defs>
+                                        <g id="heart" clip-path="url(#clip-heart)">
+                                          <g id="pills" transform="translate(-116 -232)">
+                                            <g id="Group_150" data-name="Group 150">
+                                              <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                </span>
+                                4.5
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__term">Артикул 000001</span>
+                                <span class="product__available">В наличии 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">500 $</span>
+                                <span class="product-price__old">1000 $</span>
+                                
+                            </div>
+                            <button class="product__btn btn">В корзину</button>
+                            
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+           
+                            <div class="product__image"> 
+                                <div class="product__switch image-switch" >
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard1.png" alt="T-Shirt 1"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
+                                    </div>
+                                  
+                                </div>
+                          
+                    
+                                <ul class="product__image-pagination image-pagination" aria-hidden="true">
+                                    
+                                </ul>
+                            </div>
+                            <h3 class="product__title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
+                                        <defs>
+                                          <clipPath id="clip-heart">
+                                            <rect width="96" height="96"/>
+                                          </clipPath>
+                                        </defs>
+                                        <g id="heart" clip-path="url(#clip-heart)">
+                                          <g id="pills" transform="translate(-116 -232)">
+                                            <g id="Group_150" data-name="Group 150">
+                                              <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                </span>
+                                4.5
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__term">Артикул 000001</span>
+                                <span class="product__available">В наличии 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">500 $</span>
+                                <span class="product-price__old">1000 $</span>
+                                
+                            </div>
+                            <button class="product__btn btn">В корзину</button>
+                            
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+           
+                            <div class="product__image"> 
+                                <div class="product__switch image-switch" >
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard1.png" alt="T-Shirt 1"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard2.png" alt="T-Shirt 2"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img class="product__pic" src="/img/imgCard3.png" alt="T-Shirt 3"></div>
+                                    </div>
+                                  
+                                </div>
+                          
+                    
+                                <ul class="product__image-pagination image-pagination" aria-hidden="true">
+                                    
+                                </ul>
+                            </div>
+                            <h3 class="product__title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, maiores.</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 96 96">
+                                        <defs>
+                                          <clipPath id="clip-heart">
+                                            <rect width="96" height="96"/>
+                                          </clipPath>
+                                        </defs>
+                                        <g id="heart" clip-path="url(#clip-heart)">
+                                          <g id="pills" transform="translate(-116 -232)">
+                                            <g id="Group_150" data-name="Group 150">
+                                              <path id="Path_180" data-name="Path 180" d="M164,247.762c-.092-.1-.184-.194-.276-.286A25.568,25.568,0,1,0,127.5,283.57c.1.1.2.2.316.3h0L164,320l36.224-36.093-.041-.041c.112-.092.214-.194.316-.3a25.568,25.568,0,1,0-36.223-36.094C164.184,247.568,164.092,247.66,164,247.762Z"  stroke="#58595b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                </span>
+                                4.5
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__term">Артикул 000001</span>
+                                <span class="product__available">В наличии 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">500 $</span>
+                                <span class="product-price__old">1000 $</span>
+                                
+                            </div>
+                            <button class="product__btn btn">В корзину</button>
+                            
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="height"></div>
+        </div>
+    </main>
+    
 
     <script src="script.js"></script>
+    <script src="cart.js"></script>
 </body>
 </html>

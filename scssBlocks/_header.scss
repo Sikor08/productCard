@@ -1,0 +1,107 @@
+.header{
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
+    &__cart{
+        margin-left: 40px;
+    }
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+    &__item:not(:last-child){
+        margin-right: 60px;
+    }
+}
+
+.cart{
+    position: relative;
+    padding: 40px 20px;
+    transition: background-color 1s;
+    &__quantity{
+        position: absolute;
+        right: 2px;
+        top: 45%;
+        transform: translateY(-50%);
+        background-color: orange;
+        border-radius: 100%;
+        padding: 2px;
+        min-height: 16px;
+        min-width: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.cart-content{
+    width: 400px;
+    outline: 2px solid black;
+    cursor: default;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+    &__item:hover{
+        background-color: rgb(209, 214, 214);
+    }
+    &__list{
+        max-height: 330px;
+        overflow-y: scroll;
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.cart.active:hover{
+    background-color: rgb(209, 214, 214);
+    cursor: pointer;
+}
+.cart.active:hover .cart-content{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+.content{
+    padding-top: 90px;
+}
+.cart-product{
+    display: flex;
+    align-items: center;
+    padding: 12px 12px 12px 0;
+    transition: background-color 0.4s;
+ 
+    &__img{
+        max-width: 100px;
+        max-height: 100px;
+        object-fit: cover;
+    }
+    &__text{
+        width: 250px;
+        margin-left: 10px;
+    }
+    &__delete{
+        width: 20px;
+        height: 20px;
+        margin-left: auto;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        background-image: url('../img/remove-from-cart.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+}

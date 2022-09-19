@@ -1,0 +1,43 @@
+//Сетка
+:root{
+    --gutter: 20px;
+}
+.container{
+    width: 1244px;
+    padding: 0 var(--gutter);
+    margin: 0 auto;
+}
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gutter);
+}
+.products-grid{
+    grid-column: 3 span;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.filters{
+    position: relative;
+    @media (max-width:768px) {
+        display: none;
+    }
+}
+.filters-price__input{
+    width: 100%;
+}
+.fixed{
+    position: fixed;
+    top: var(--gutter);
+    left: 0;
+}
+.absolute{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.height{
+    height: 3000px;
+}

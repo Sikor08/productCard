@@ -56,4 +56,5 @@ const fixedScrollBlock = () =>{
 };      
 window.addEventListener('scroll', fixedScrollBlock);
       
-
+    //Корзина
+  
